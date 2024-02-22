@@ -19,13 +19,6 @@ app.use(express.static(__dirname + "/public"));
 
 var sql = "Select * from loanappdb.loanappusers;";
 var db_result;
-// db_conn.query(sql, function (err, result) {
-//   if (err) throw err;
-//   db_result=result;
-//   console.log("Result: \n");
-//   console.log(result);
-// });
-//const router=express.Router();
 app.get('/' , (req , res)=>{
 
    res.render('home')
